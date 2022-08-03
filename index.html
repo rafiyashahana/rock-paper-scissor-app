@@ -3,23 +3,30 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>replit</title>
+    <title>Rock-Paper-Scissors-App</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
     <div class="wrapper">
+      <button class="resetButton" id="endGameButton">Reset Game</button>
+      <br />
       <div class="buttons">
-        <button class="rpsButton" value="Rock">✊</button>
-        <button class="rpsButton" value="Paper">🤚</button>
-        <button class="rpsButton" value="Scissors">✌</button>
+        <button class="rpsButton" value="✊">✊</button>
+        <button class="rpsButton" value="🤚">🤚</button>
+        <button class="rpsButton" value="✌">✌</button>
       </div>
+      <div id="yourChoice" class="resetButton"></div>
+
       <div class="resultContainer">
-        <div id="player-score"></div>
-        <div id="hands"></div>
         <div id="result"></div>
       </div>
-      <button class="resetButton" id="endGameButton">Reset Game</button>
+
+      <hr />
+      <div class="resetButton">
+        Computer Choice
+        <div id="computerChoice" class="resultContainer"></div>
+      </div>
     </div>
 
     <script src="script.js"></script>
